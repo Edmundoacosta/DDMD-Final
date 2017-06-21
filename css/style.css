@@ -1,0 +1,90 @@
+@import url("queries.css");
+
+/* Vista Home */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+section.home ul {
+	align-items: center;
+	display: flex;	
+	justify-content: space-around;
+	margin-bottom: 0px;
+}
+
+section.home ul li {
+	list-style: none;
+	width: 20%;
+	text-align: center;
+}
+
+section.home ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.main-image {
+	align-items: center;
+	display: flex;
+	height: 500px;
+	justify-content: space-around;
+	position: relative;	
+	width: 100%;	
+}
+
+.main-body {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 0px;
+}
+
+.main-body .body-img img{
+	border: 1px solid #000;
+	padding: 3px;
+}
+
+.main-body .body-text {
+	width: 40%;
+	text-align: center;
+}
+
+.btn-home {
+	bottom: 50px;
+	position: absolute;
+}
+
+.btn-home button {
+	background: #000;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 15px;
+	transition: all ease 0.5s;
+}
+
+.btn-home button:hover {
+	background: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.main-image::after {
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(20, 20, 20, .5)), url('../images/pizzaromana.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;	
+	z-index: -1;
+}
+
+.section-2 {
+	background-color: silver;
+}
