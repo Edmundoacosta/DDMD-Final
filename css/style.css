@@ -1,4 +1,13 @@
-@import url("queries.css");
+
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Sweetpea';
+  src: url('../fonts/Sweetpea.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
 
 /* Vista Home */
 
@@ -10,11 +19,21 @@
 	font-family: 'Lato', sans-serif;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
+h2 {
+	font-family: 'Sweetpea';
+	font-size: 25px;
+}
+
 section.home ul {
 	align-items: center;
 	display: flex;	
 	justify-content: space-around;
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 }
 
 section.home ul li {
@@ -24,17 +43,111 @@ section.home ul li {
 }
 
 section.home ul li a {
-	color: #000;
+    box-shadow: 0 0 1px transparent;
+	color: #333;
+	display: inline-block;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
+    transform: perspective(1px) translateZ(0);
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+}
+
+section.home ul li a:before {
+    background: #006534;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: translateY(4px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+    -webkit-transform: translateY(4px);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+}
+
+section.home ul li a:hover {
+	color: #006534;
+}
+
+section.home ul li a:hover:before {
+    transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+
+.left {
+	width: 30%; 
+}
+
+.left p {
+	font-size: 25px;
+	text-transform: uppercase;
+	line-height: 40px;
+	letter-spacing: 10px;
+	font-family: 'Lato';
+	color: #fff;
 }
 
 .main-image {
 	align-items: center;
 	display: flex;
-	height: 500px;
+	height: 55rem;
 	justify-content: space-around;
 	position: relative;	
 	width: 100%;	
+	overflow: hidden;
+}
+
+.card p, h3 {
+	margin: 0;
+}
+
+p.price {
+	color: #006A38;
+	font-weight: bold;
+	font-family: 'Sweetpea';
+	font-size: 25px;
+	letter-spacing: 4px;
+	margin-top: 10px;
+}
+
+.humo {
+	position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+    animation: humoGif 5s infinite;
+}
+
+.CartaNuestra{
+	position: relative;
+}
+
+.CartaNuestra:after {
+	content: url(../images/flecha.png);
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+@keyframes humoGif {
+    0% {transform:scale(2,2); opacity: 0.5; transition: 1s;}
+    25% {transform:scale(2.5,2.5); opacity: 1; transition: 1s;}
+    50%  {transform: scale(2,2); opacity: 0.5; transition: 1s;}
+    75%  {transform: scale(2.5,2.5); opacity: 1; transition: 1s;}
+    100%  {transform: scale(2,2); opacity: 0.5; transition: 1s;}
 }
 
 .main-body {
@@ -53,17 +166,35 @@ section.home ul li a {
 	text-align: center;
 }
 
-.btn-home {
-	bottom: 50px;
-	position: absolute;
-}
 
-.btn-home button {
-	background: #000;
+.bck-container .left button {
+	background: transparent;
 	color: #fff;
 	border: 1px solid #fff;
-	padding: 15px;
+	padding: 15px 8rem;
 	transition: all ease 0.5s;
+	margin-top: 90px;
+	z-index: 100;
+}
+
+.left {
+	position: relative;
+}
+
+.bck-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.bck-container .right {
+	width: 50%;
+	position: relative;
+}
+
+.bck-container .right img {
+	width: 100%;
+	height: auto;
 }
 
 .btn-home button:hover {
@@ -72,8 +203,99 @@ section.home ul li a {
 	border: 1px solid #000;
 }
 
+.logo {
+	width: 100px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.offers {
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../images/white-wood.jpeg') ;
+	padding: 60px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.offers-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.trigo-container {
+	position: absolute;
+    width: 202px;
+    right: 0;
+    top: 200px;
+}
+
+.card {
+	width: 200px;
+    background: url(../images/frame.png);
+    text-align: center;
+    height: 255px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+
+.text-card {
+	margin: auto;
+	font-size: 16px;
+}
+
+.text-card h3 {
+	margin-bottom: 20px;
+}
+
+.title-offers {
+	text-align: center;
+}
+
+.footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 400px;
+}
+
+.bck-coliseum {
+	background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/coliseo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 24%;
+	height: 57%;
+}
+
+.footer-bottom {
+	background: #000;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 9px 0px;
+}
+
+.footer-bottom p {
+	margin: 0;
+}
+
+.title-offers::after {
+	content: "";
+	text-align: center;
+	padding-top: 8px;
+	width: 6%;
+	display: block;
+	border-bottom: 1px solid #000;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+
 .main-image::after {
-	background: linear-gradient(rgba(0, 0, 0, 1), rgba(20, 20, 20, .5)), url('../images/pizzaromana.jpg');
+	background: linear-gradient(rgba(200, 0, 0, 1), rgba(50, 0, 0, 1));
 	background-size: cover;
 	background-repeat: no-repeat;
 	bottom: 0;
@@ -88,3 +310,18 @@ section.home ul li a {
 .section-2 {
 	background-color: silver;
 }
+.text_card{
+	margin:auto;
+}
+@media(max-width: 1200px){
+	.offers-cards {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.card{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@import url("queries.css");

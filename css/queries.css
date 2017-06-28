@@ -1,0 +1,9 @@
+@media(max-width: 1200px){
+	.offers-cards {
+		flex-wrap: wrap;
+	}
+	.card{
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
