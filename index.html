@@ -3,6 +3,7 @@
 <head>
 	<title>Proyecto final DDMD</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -13,20 +14,26 @@
 			<div class="container">
 				<nav>
 					<ul>
-						<li>
+						<li class="text-web">
 							<a href="./history.html">Historia</a>
 						</li>
-						<li>
-							<a href="#">Carta</a>
+						<li class="dismiss">
+							
+						</li>
+						<li class="text-web">
+							<a href="./Carta.html">Carta</a>
 						</li>
 						<li>
-							<img class="logo" src="./images/logo.jpg" alt="">
+							<img class="logo" src="./images/romana-logo.png" alt="">
 						</li>
-						<li>
+						<li class="text-web">
 							<a href="#">Reservas</a>
 						</li>
-						<li>
+						<li class="text-web">
 							<a href="#">Locales</a>
+						</li>
+						<li class="dismiss"> 
+							
 						</li>
 					</ul>
 				</nav>
@@ -53,15 +60,82 @@
 			<div class="offers">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
-							<img src="./images/pepperoni_pizza.jpg" alt="">
+						<div class="col-lg-6 col-md-12">
+							<div class="food-container">
+								<a href="./Carta.html">
+									<img class="food" src="./images/pepperoni_pizza.jpg" alt="">
+									<div class="food-text">
+										<p>Variedad de Pizzas</p>
+									</div>
+								</a>
+							</div>
 						</div>
-						<div class="col-lg-6">
-							<img src="./images/lasagna.jpg" alt="">
+						<div class="col-lg-6 col-md-12">
+							<div class="food-container">
+								<a href="./Carta.html">
+									<img class="food" src="./images/lasagna.jpg" alt="">
+									<div class="food-text">
+										<p>Variedad de Lasagnas</p>
+									</div>
+								</a>
+							</div>							
 						</div>
-						<div class="col-lg-12 carts">
+						<div class="col-lg-12">
 							<h2 class="title-offers">Ofertas Especiales</h2>
 							<div class="offers-cards">
+								<div class="text-web">
+									<p>N° 1 ................................................................. 1 Pizza Familizar + 1 Gaseosa de 1½Lt. .................................................... <span class="price">S/. 57.80</span></p>
+									<p>N° 2 ....................................................... 2 Lasagnas + 1 Pan al Ajo +  1 Gaseosa de 1½Lt.  ............................................... <span class="price">S/. 47.80</span></p>
+									<p>N° 3 ........................................................ 1 Pizza Personal + 2 Lasagnas + 1 Gaseosa de 1½Lt. ...................................... <span class="price">S/. 70.00</span></p>
+									<p>N° 4 ........................................................ 1 Pizza Grande + 2 Lasagnas + 1 Gaseosa de 1½Lt. ......................................... <span class="price">S/. 90.20</span></p>
+									<p>N° 5 ......................................................... 1 Pizza Familizar + 4 Lasagnas + 1 Gaseosa de 1½Lt. .................................... <span class="price">S/. 127.80</span></p>
+								</div>
+								<div class="text-mobile dismiss">
+									<div class="combo combo-one">
+										<p>N° 1</p>
+										<p>1 PIZZA FAMILIAR</p>
+										<p>+</p>
+										<p>1 GASEOSA DE 1½Lt.</p>
+										<span class="price">S/. 57.80</span>
+									</div>
+									<div class="combo combo-two">
+										<p>N° 2</p>
+										<p>2 Lasagnas</p>
+										<p>+</p>
+										<p>1 Pan al Ajo</p>
+										<p>+</p>
+										<p>1 GASEOSA DE 1½Lt.</p>
+										<span class="price">S/. 47.80</span>
+									</div>
+									<div class="combo combo-three">
+										<p>N° 3</p>
+										<p>1 Pizza Personal</p>
+										<p>+</p>
+										<p>2 Lasagnas</p>
+										<p>+</p>
+										<p>1 GASEOSA DE 1½Lt.</p>
+										<span class="price">S/. 70.00</span>
+									</div>
+									<div class="combo combo-four">
+										<p>N° 4</p>
+										<p>1 Pizza Grande</p>
+										<p>+</p>
+										<p>2 Lasagnas</p>
+										<p>+</p>
+										<p>1 GASEOSA DE 1½Lt.</p>
+										<span class="price">S/. 90.20</span>
+									</div>
+									<div class="combo combo-five">
+										<p>N° 5</p>
+										<p>1 Pizza Familizar</p>
+										<p>+</p>
+										<p>4 Lasagnas</p>
+										<p>+</p>
+										<p>1 GASEOSA DE 1½Lt.</p>
+										<span class="price">S/. 127.80</span>
+									</div>
+								</div>
+							<!--
 								<div class="card">
 									<div class="text-card">
 										<h3>Oferta N° 1</h3>
@@ -116,48 +190,64 @@
 										<p>1 Gaseosa de 1½Lt.</p>
 										<p class="price">S/. 127.30</p>
 									</div>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main-body">
+			<div class="main-body nain_body_responsive">
 				<div class="body-img">
-					<img src="http://via.placeholder.com/250x250" alt="">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.170351668143!2d-77.00983928476478!3d-12.100487743360997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7d8c05cd03f%3A0x5b7578565f4ad697!2sAv+San+Borja+Sur+241%2C+Distrito+de+Lima+15036%2C+Per%C3%BA!5e0!3m2!1ses!2ses!4v1498675472180" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-				<div class="body-text">
-					<h3>Historia</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita aut eveniet tempora nobis ex reiciendis, consequuntur temporibus, iusto placeat velit voluptatem odit consequatur recusandae sapiente nisi laboriosam, cum fugit.
-					</p>
+				<div class="visit-us">
+					<div class="center-text-visit">
+						<p>VEN Y VISITANOS EN</p>
+						<p class="title-address">
+							Av.San Borja Sur 241 - San Borja
+						</p>
+						<button>O en cualquier de nuestros locales ></button>
+					</div>
 				</div>
 			</div>
 			<div class="main-body section-2">
-				<div class="body-img">
-					<img src="http://via.placeholder.com/250x250" alt="">
-				</div>
-				<div class="body-text">
-					<h3>Encuentranos</h3>
-					<p>
-						Mapa de San Borja
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. In expedita aut eveniet tempora nobis ex reiciendis, consequuntur temporibus, iusto placeat velit voluptatem odit consequatur recusandae sapiente nisi laboriosam, cum fugit.
-					</p>
+				<div class="special-day">
+					<h2 class="special-title">Reserva tu mesa</h2>
+					<p>Y pasa un momento inolvidable</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="footer-top">
-			<div class="bck-coliseum">
+			<div class="bck-coliseum-one">
 				
 			</div>
 			<div class="footer-container">
-				<div class="text-footer">
-					<p>Hola</p>
+				<div class="footer-logo">
+					<img src="./images/romana-logo.png" alt="">
+				</div>
+				<div class="container text-footer">
+					<ul>
+						<li>
+							<a href="#">Inicio</a>
+						</li>
+						<li>
+							<a href="./history.html">Historia</a>
+						</li>
+						<li>
+							<a href="#">Carta</a>
+						</li>
+						<li>
+							<a href="#">Reservas</a>
+						</li>
+						<li>
+							<a href="#">Locales</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="bck-coliseum">
+			<div class="bck-coliseum-two">
 				
 			</div>
 		</div>

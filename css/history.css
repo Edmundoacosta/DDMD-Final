@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+
 .image-history {
 	background: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/1.jpg');
 	background-repeat: no-repeat;
@@ -6,37 +9,54 @@
 	height: 750px;
 }
 
-section.history ul {
-	align-items: center;
-	display: flex;	
-	justify-content: space-around;
-	margin-bottom: 15px;
+@import url("queries.css");
+
+/* Fonts */
+
+@font-face {
+
+  font-family: 'Montez';
+  src: url('../fonts/Montez-Regular.ttf') format('ttf');
+
 }
 
-section.history ul li {
-	list-style: none;
-	width: 20%;
-	text-align: center;
+
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+ ul {
+    align-items: center;
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 15px;
 }
 
-section.history ul li a {
+ ul li {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+}
+
+ul li a {
     box-shadow: 0 0 1px transparent;
-	color: #333;
-	display: inline-block;
+    color: #333;
+    display: inline-block;
     overflow: hidden;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
     transform: perspective(1px) translateZ(0);
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
+
 }
 
-section.history ul li a:before {
+ul li a:before {
     background: #006534;
     bottom: 0;
     content: "";
@@ -55,11 +75,12 @@ section.history ul li a:before {
     -webkit-transition-timing-function: ease-out;
 }
 
-section.history ul li a:hover {
-	color: #006534;
+ul li a:hover {
+    color: #006534;
+    text-decoration: none;
 }
 
-section.history ul li a:hover:before {
+ul li a:hover:before {
     transform: translateY(0);
-	-webkit-transform: translateY(0);
+    -webkit-transform: translateY(0);
 }
