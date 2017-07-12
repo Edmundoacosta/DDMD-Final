@@ -523,7 +523,7 @@ iframe {
   z-index:10000000000000;
 }
 
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#5a0000;  position:absolute; text-align:center; font-size:12px; top: 0px;height: 100vh}
+.menu{display: none;z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#5a0000;  position:absolute; text-align:center; font-size:12px; top: 0px;height: 100vh}
 .menu ul {margin-top: 15px; padding: 0; list-style-type: none; list-style-image: none; display: flex; flex-direction: column; height: 100%;
 justify-content: space-around;}
 .menu li {display: block;   padding:15px 0 15px 0;}
@@ -696,6 +696,10 @@ justify-content: space-around;}
 	.nain_body_responsive{
 		display: flex;
 		flex-direction: column;
+	}
+
+	.menu {
+		display: inherit;
 	}
 
 	.visit-us {
