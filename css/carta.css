@@ -9,6 +9,21 @@
     align-items: center;
 }
 
+.haiden{
+    overflow: hidden;
+}
+
+.image-carta2 {
+    background: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/pizza-carta.jpeg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
 .text_card_image {
     margin: auto;   
     text-align: center;
@@ -38,17 +53,22 @@
 .card2 {
     flex-direction: row-reverse;
     margin-top: 50px;
+    margin-bottom: 70px !important;
 }
 
 .card2 .right {
     background: url(../images/ensalada.jpg) !important;
     background-repeat: no-repeat !important;
+
+}
+
+.card2 .left {
+    text-align: right;
 }
 
 .type_card .left {
     width: 45%;
-    height: 300px;
-    text-align: center;
+    height: 395px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -60,6 +80,7 @@
     font-size: 14px;
     text-decoration: center;
     margin: 0;
+    letter-spacing: 5px;
 }
 
 .type_card .left .text_card p span {
@@ -69,10 +90,20 @@
 
 .type_card .right {
     width: 45%;
-    height: 300px;
+    height: 395px;
     background: url(../images/pan-al-ajo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.text_card_image p {
+    font-family: 'Montez', sans-serif;
+    font-size: 45px;
+}
+
+.text_card_image h3 {
+    font-family: 'Lato';
+    font-size: 60px;
 }
 
 
@@ -133,3 +164,296 @@ section.history ul li a:hover:before {
     transform: translateY(0);
 	-webkit-transform: translateY(0);
 }
+
+.p_extra p{
+    font-size:8.5px !important;
+    width: 370px;
+    padding: 0px;
+    margin: 0px;
+    height: 20px;
+}
+
+.left .text_card .right_text {
+    text-align: -webkit-right;
+}
+
+.text_card_image2{
+    background: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/pasta.jpg');
+    background-attachment: fixed;
+}
+
+.text_card_image3{
+    background: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/postres.jpg');
+    background-attachment: fixed;
+}
+
+.text_card_image4{
+    background: linear-gradient(rgba( 0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/bebidas.jpg');
+    background-attachment: fixed;
+}
+
+.repeat_content { 
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_repeat {
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.text_repeat_carta p{
+    font-family: 'Lato' !important;
+    color: black;
+    font-size: 13px;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.download-container {
+    text-align: center;
+    margin: 4rem 0rem;
+}
+
+.download-container a {
+    padding: 12px 15px;
+    background: #017246;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all ease 0.7s;
+}
+
+.download-container a:hover {
+    padding: 12px 15px;
+    background: #fff;
+    border: 1px solid #017246;
+    color: #017246;
+}
+
+.combo_repeat {
+    width: 100%;
+    height: 0px;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.price {
+    margin-left: 2px;
+}
+
+.combo_repeat p {
+    color: #4e3530;
+    font-weight: bold;
+    font-family: 'Montez';
+    font-size: 25px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    font-family: 'Montez', sans-serif;
+    margin-left: 40px;
+}
+
+.right_repeat {
+    width: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tamaño_pizzas {
+    height: 620px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.title_repeat {
+    text-align: center;
+    color: black;
+    font-family: 'Montez';
+    font-size: 24px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    font-family: 'Montez', sans-serif;
+    margin-left: 40px;
+}
+
+.tamaño_pasta {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wrap_pasta {
+    flex-wrap: wrap;
+}
+.wrap_pasta .title_repeat {
+    width: 100%;
+}
+.espacio_postre p {
+    margin-right: 40px;
+}
+
+@media(min-width: 1360px) {
+    .type_card {
+        width: 1300px;
+        margin: auto;
+    }
+    .repeat_content {
+        width: 1300px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1260px) {
+    .repeat_content {
+        flex-direction: column;
+    }
+
+    .left_repeat {
+        margin:auto;
+    }
+
+    .right_repeat {
+        margin:auto;
+    }
+}
+
+@media(max-width: 806px) {
+    .left_repeat{
+         width: 500px;
+    }
+
+    .right_repeat{
+         width: 500px;
+    }
+    .text_repeat_carta p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .combo_repeat p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 580px) {
+    .left_repeat{
+         width: 400px;
+    }
+
+    .right_repeat{
+         width: 400px;
+    }
+    .text_repeat_carta p {
+        font-size: 8px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    .combo_repeat p {
+        font-size: 15px;
+    }
+    .espacio_postre p {
+        margin-right: 20px;
+    }
+}
+
+
+
+
+@media(max-width: 1150px) {
+    .type_card {
+        width: 700px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .type_card .left {
+        width: 100%;
+        height: 395px;
+        text-align: center;
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .type_card .right{
+        width: 100%;
+    }
+
+    .left .text_card .right_text{
+       text-align: -webkit-center !important;
+    }
+
+    .card2 .left {
+        text-align: center;
+    }
+
+    .p_extra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 803px) {
+    .Card_right {
+        display: block !important;
+    }
+
+    .Card_right {
+        width: 80% !important;
+        margin: auto;
+    }
+
+}
+
+@media(max-width: 720px) {
+    .type_card {
+        width: 100%;
+    }
+
+    .Card_right {
+        height: 300px !important;
+    }
+}
+
+@media(max-width: 530px) {
+    .p_extra p {
+        font-size: 7px !important;
+    }
+
+    .type_card .left .text_card p {
+        font-size: 9px;
+    }
+
+    .type_card .left .text_card p span{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

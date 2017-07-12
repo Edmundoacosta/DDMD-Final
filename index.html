@@ -24,16 +24,19 @@
 							<a href="./Carta.html">Carta</a>
 						</li>
 						<li>
-							<img class="logo" src="./images/romana-logo.png" alt="">
+							<a href="./index.html">
+								<img class="logo" src="./images/romana-logo.png" alt="">
+							</a>
 						</li>
 						<li class="text-web">
-							<a href="#">Reservas</a>
+							<a href="./reservas.html">Reservas</a>
 						</li>
 						<li class="text-web">
-							<a href="#">Locales</a>
+							<a href="./locales.html">Locales</a>
 						</li>
 						<li class="dismiss"> 
-							
+							<button class="hamburger">&#9776;</button>
+  							<button class="cross">&#735;</button>
 						</li>
 					</ul>
 				</nav>
@@ -49,7 +52,7 @@
 							<button class="CartaNuestra">Nuestra Carta</button>
 						</div>
 						<div class="right">
-							<img src="./images/pizza1.png" alt="">
+							<img src="./images/pizza1-optimized.png" alt="">
 							<div class="humo">
 								<img src="./images/humo.png">
 							</div>
@@ -135,62 +138,6 @@
 										<span class="price">S/. 127.80</span>
 									</div>
 								</div>
-							<!--
-								<div class="card">
-									<div class="text-card">
-										<h3>Oferta N° 1</h3>
-										<p>1 Pizza Familiar</p>
-										<p>+</p>
-										<p>1 Lasagna</p>
-										<p>+</p>
-										<p>1 Gaseosa de 1½Lt.</p>
-										<p class="price">S/. 57.30</p>
-									</div>
-								</div>
-								<div class="card">
-									<div class="text-card">
-										<h3>Oferta N° 2</h3>
-										<p>2 Lasagnas</p>
-										<p>+</p>
-										<p>1 Pan al Ajo</p>
-										<p>+</p>
-										<p>1 Gaseosa de 1½Lt.</p>
-										<p class="price">S/. 47.80</p>
-									</div>									
-								</div>
-								<div class="card">
-									<div class="text-card">
-										<h3>Oferta N° 3</h3>
-										<p>1 Pizza Personal</p>
-										<p>+</p>
-										<p>2 Lasagnas</p>
-										<p>+</p>
-										<p>1 Gaseosa de 1½Lt.</p>
-										<p class="price">S/. 70.00</p>
-									</div>									
-								</div>
-								<div class="card">
-									<div class="text-card">
-									<h3>Oferta N° 4</h3>
-										<p>1 Pizza Grande</p>
-										<p>+</p>
-										<p>2 Lasagnas</p>
-										<p>+</p>
-										<p>1 Gaseosa de 1½Lt.</p>
-										<p class="price">S/. 90.20</p>
-									</div>									
-								</div>
-								<div class="card">
-									<div class="text_card">
-										<h3>Oferta N° 5</h3>
-										<p>1 Pizza Familiar</p>
-										<p>+</p>
-										<p>4 Lasagnas</p>
-										<p>+</p>
-										<p>1 Gaseosa de 1½Lt.</p>
-										<p class="price">S/. 127.30</p>
-									</div>
-								</div>-->
 							</div>
 						</div>
 					</div>
@@ -211,9 +158,21 @@
 				</div>
 			</div>
 			<div class="main-body section-2">
-				<div class="special-day">
-					<h2 class="special-title">Reserva tu mesa</h2>
-					<p>Y pasa un momento inolvidable</p>
+				<div id="videoDiv">
+					<div id="videoBlock">
+						<video preload="preload" id="video" muted="muted" autoplay="autoplay" loop="loop">
+							<source src="./video/pizza.mp4" type="">
+						</video>
+						<div id="videoMessage">
+							<div class="text_video"> 
+								<h2>Reserva tu mesa</h2>
+								<p class="videoClick">
+									Y pasa un momento inolvidable
+								</p>
+								<button class="reserva">Reserva ></button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -230,19 +189,19 @@
 				<div class="container text-footer">
 					<ul>
 						<li>
-							<a href="#">Inicio</a>
+							<a href="./index.html">Inicio</a>
 						</li>
 						<li>
 							<a href="./history.html">Historia</a>
 						</li>
 						<li>
-							<a href="#">Carta</a>
+							<a href="./Carta.html">Carta</a>
 						</li>
 						<li>
-							<a href="#">Reservas</a>
+							<a href="./reservas.html">Reservas</a>
 						</li>
 						<li>
-							<a href="#">Locales</a>
+							<a href="./locales.html">Locales</a>
 						</li>
 					</ul>
 				</div>
@@ -255,6 +214,15 @@
 			<p>© La Romana 2017. Todos los derechos reservados.</p>
 		</div>
 	</footer>
+	<div class="menu">
+	  <ul>
+	    <a href="./index.html"><li>INICIO</li></a>
+	    <a href="./history.html"><li>HISTORIA</li></a>
+	    <a href="./Carta.html"><li>CARTA</li></a>
+	    <a href="./reservas.html"><li>RESERVAS</li></a>
+	    <a href="./locales.html"><li>LOCALES</li></a>
+	  </ul>
+	</div>
 		
 <script type="text/javascript" src="./scripts/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
